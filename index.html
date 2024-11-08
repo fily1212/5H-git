@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lettera del Professore</title>
+    <style>
+        /* Tema autunnale di novembre */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4e3c2; /* Color crema caldo */
+            color: #3d3d3d; /* Testo scuro per leggibilità */
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.w3schools.com/w3images/autumn.jpg'); /* Immagine di sfondo autunnale */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #d56b2d; /* Colore arancione autunnale */
+            text-align: center;
+        }
+
+        .letter {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #5f4b3a;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            background-color: #d56b2d; /* Colore arancione */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #c55a28; /* Colore arancione più scuro */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Lettera del Professore</h1>
+    <div class="letter" id="lettera">
+        <p><strong>Cari studenti della quinta,</strong></p>
+
+        <p>Mi trovo a scrivere questa lettera con un misto di incredulità e frustrazione, e sinceramente non so nemmeno da dove cominciare. La **lezione su Git** era, senza ombra di dubbio, una delle più importanti dell'intero anno. Eppure, invece di vedervi tutti puntuali e pronti a imparare qualcosa che **veramente conta**, vi siete presentati in pochi. Pochissimi. Un numero che fa davvero pensare.</p>
+
+        <p>Ma non è solo una questione di numeri, è una questione di **atteggiamento**. Voi, quelli della quinta, dovreste essere consapevoli che tra pochi mesi vi troverete di fronte alla **maturità**, il momento che segna il passaggio all'età adulta. La lezione di oggi non era un "optional", non era un argomento frivolo, ma uno degli strumenti che **potrebbero davvero fare la differenza** nella vostra carriera. Eppure, avete deciso di ignorarlo. Avete scelto di non esserci, come se il mondo potesse aspettare. Come se tutto il resto non fosse davvero importante. Ma lo è!</p>
+
+        <p>Quello che non capite è che **Git** non è un argomento da esame. È uno strumento che **vi seguirà** per tutta la vita professionale. Non è un gioco, non è una moda. È il **futuro** che avete scelto di ignorare, mentre chiunque abbia un minimo di senso di responsabilità sta imparando, sta cercando di migliorarsi, sta costruendo qualcosa di solido per il futuro.</p>
+
+        <p>Mi sembra incredibile che, a pochi passi dalla maturità, non siate ancora riusciti a capire che **questo è il momento di fare sul serio**. Non stiamo parlando di come passare un esame, stiamo parlando di come prepararsi per il mondo fuori da questa scuola. E mentre la maggior parte di voi probabilmente pensa che un bel voto finale basti per iniziare una carriera, vi assicuro che non è così. Senza competenze pratiche, senza **responsabilità**, senza la capacità di affrontare le sfide, sarete dei pesi morti per chiunque vi assumerà. E non voglio essere io quello che vi vedrà fallire per **questo errore di valutazione**.</p>
+
+        <p>Forse qualcuno pensa che basti “passare l’esame” e il gioco sia fatto. Ma lasciate che vi dica una cosa: se non capite l'importanza di Git e delle competenze tecnologiche, allora il vero esame non è quello che farete tra qualche mese, ma quello che vi troverete ad affrontare tutti i giorni nella vita lavorativa.</p>
+
+        <p>Vi sto chiedendo un'unica cosa: <strong>datevi una svegliata</strong>. Non lasciatevi scivolare addosso queste occasioni. Non fate che il vostro futuro si costruisca su **scelte sbagliate** fatte oggi. Io, come professore, sto cercando di darvi le armi per il futuro, ma se non ci mettete la volontà di **imparare** adesso, non potrò farci niente.</p>
+
+        <p>Non posso più accettare scuse. La lezione di oggi era la prova che avevate bisogno di più impegno, non di meno. Quando ve ne renderete conto, potrebbe essere troppo tardi.</p>
+
+        <p><strong>Con preoccupazione,</strong><br>Il vostro Professore</p>
+    </div>
+
+    <button onclick="ingrandisciTesto()">Fai diventare la lamentela più grande!</button>
+</div>
+
+<script>
+    function ingrandisciTesto() {
+        // Aumenta la dimensione del testo della lettera
+        var lettera = document.getElementById("lettera");
+        var currentSize = parseFloat(window.getComputedStyle(lettera, null).getPropertyValue('font-size'));
+        lettera.style.fontSize = (currentSize * 1.5) + "px"; // Aumenta del 50%
+    }
+</script>
+
+</body>
+</html>
